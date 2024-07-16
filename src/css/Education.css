@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.App {
+  text-align: center;
+  padding: 5px;
+}
+
+.title {
+  font-size: 36px;
+  margin-bottom: 60px;
+  font-family: "Inter", sans-serif;
+}
+
+.title .highlight {
+  color: #2A8BF2;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 140px;
+  margin-bottom: 20px;
+}
+
+.card1, .card2 {
+  width: 240px;
+  height: 336px;
+  overflow: hidden;
+  border: 3px solid #2A8BF2;
+  border-radius: 20px;
+  background-color: #dcf0f7;
+  transition: transform 0.3s ease;
+}
+
+.card1 img, .card2 img {
+  width: 160px;
+  height: 144px;
+  margin-top: 50px;
+  object-fit: cover;
+}
+
+.card2 img {
+  width: 140px;
+  height: 214px;
+  margin-top: 25px;
+  object-fit: cover;
+}
+
+.card1 h4, .card2 h4 {
+  color: #2A8BF2;
+  margin-top: 45px;
+  font-family: "Inter", sans-serif;
+}
+
+.card2 h4 {
+  margin-top: 1px;
+}
+
+.card1:hover, .card2:hover {
+  transform: scale(1.1);
+}
+
+.start-button {
+  padding: 13px 20px;
+  font-size: 13px;
+  color: #fff;
+  background-color: #2A8BF2;
+  border: none;
+  border-radius: 80px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 40px;
+  font-family: "Inter", sans-serif;
+}
+
+
+
+.start-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .card1, .card2 {
+    width: 45%;
+    height: auto;
+  }
+
+  .card1 img, .card2 img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .card1 h4, .card2 h4 {
+    margin-top: 20px;
+  }
+
+  .start-button {
+    width: auto;
+    padding: 13px 20px;
+  }
+}
